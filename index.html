@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Syed Mohammad Wasif, an ECE undergraduate building Django web applications, IoT systems, and smart healthcare products.">
+  <meta name="keywords" content="Syed Mohammad Wasif, portfolio, Django developer, IoT, ECE, Python, web developer">
+  <meta name="author" content="Syed Mohammad Wasif">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:title" content="Syed Mohammad Wasif - Developer Portfolio">
+  <meta property="og:description" content="Django, Python, IoT, and smart healthcare project portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/portfolio-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Syed Mohammad Wasif | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-mark">SW</div>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="ambient-glow" id="ambientGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#hero" aria-label="Go to hero section">
+      <span class="brand-mark">SW</span>
+      <span>Syed Wasif</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+        <span class="sun"></span>
+        <span class="moon"></span>
+      </button>
+      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+      <div class="hero-orbit" aria-hidden="true"></div>
+      <div class="section-shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ECE undergraduate · Django · IoT · Python</p>
+          <h1>Building useful web and IoT products with engineering discipline.</h1>
+          <p class="hero-role">I am a <span id="typingText">Full Stack Developer</span></p>
+          <p class="hero-intro">
+            I am Syed Mohammad Wasif, an Electronics and Communication Engineering student focused on Django web applications, Python, IoT systems, and smart healthcare solutions.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="assets/resume.pdf" download>Download Resume</a>
+            <a class="button ghost" href="#contact">Contact Me</a>
+          </div>
+          <div class="social-row" aria-label="Social links">
+            <a href="https://github.com/SyedWasif-18" aria-label="GitHub" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.5A11.2 11.2 0 0 0 12 .8Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/syedwasif2004/" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.1 7.4H1.5V23h3.6V7.4ZM3.3 1A2.1 2.1 0 1 0 3.3 5.2 2.1 2.1 0 0 0 3.3 1Zm19.2 13c0-4.2-2.2-6.2-5.1-6.2a4.4 4.4 0 0 0-4 2.2h-.1V7.4H9.9V23h3.6v-7.7c0-2 .4-4 2.9-4s2.5 2.3 2.5 4.1V23h3.6v-9Z"/></svg>
+            </a>
+            <a href="mailto:syedwasif8198@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.8A2.8 2.8 0 0 1 4.8 3h14.4A2.8 2.8 0 0 1 22 5.8v12.4a2.8 2.8 0 0 1-2.8 2.8H4.8A2.8 2.8 0 0 1 2 18.2V5.8Zm2.8-.9a.9.9 0 0 0-.9.9v.5l8.1 5.1 8.1-5.1v-.5a.9.9 0 0 0-.9-.9H4.8Zm15.3 3.6-7.6 4.8a1 1 0 0 1-1 0L3.9 8.5v9.7a.9.9 0 0 0 .9.9h14.4a.9.9 0 0 0 .9-.9V8.5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-stage reveal">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="wasif-Photoroom.png" alt="Portrait of Syed Mohammad Wasif">
+            </div>
+            <div class="profile-meta">
+              <span class="status-dot"></span>
+              <span>Open to internships and product teams</span>
+            </div>
+          </div>
+          <div class="floating-panel panel-one">
+            <span>98</span>
+            <small>Performance score</small>
+          </div>
+          <div class="floating-panel panel-two">
+            <span>IoT + Web</span>
+            <small>Healthcare systems</small>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-shell split-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Creative engineering with a strong foundation in web, IoT, and electronics.</h2>
+        </div>
+        <div class="about-content reveal">
+          <p>
+            I am an aspiring engineer from Anantapur pursuing B.Tech in Electronics and Communication Engineering at Srinivasa Ramanujan Institute of Technology. I enjoy turning practical problems into working software and connected-device solutions.
+          </p>
+          <p>
+            I aim to join a progressive organization that encourages creativity, innovation, and excellence, where I can contribute meaningfully while continually evolving into a more skilled and resourceful professional.
+          </p>
+          <div class="stats-grid">
+            <article class="stat-card"><strong data-count="2">0</strong><span>Major Projects</span></article>
+            <article class="stat-card"><strong data-count="12">0</strong><span>Technologies</span></article>
+            <article class="stat-card"><strong data-count="2">0</strong><span>Certifications</span></article>
+            <article class="stat-card"><strong data-count="3">0</strong><span>Years of Learning</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>A practical toolkit across software development, platforms, and ECE fundamentals.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal" data-level="86"><div class="skill-icon">PY</div><h3>Programming Languages</h3><p>C, Python, SQL</p><div class="progress"><span></span></div></article>
+          <article class="skill-card reveal" data-level="88"><div class="skill-icon">UI</div><h3>Frontend Development</h3><p>HTML, CSS, JavaScript, Bootstrap, responsive UI</p><div class="progress"><span></span></div></article>
+          <article class="skill-card reveal" data-level="84"><div class="skill-icon">DJ</div><h3>Backend Development</h3><p>Django, authentication, CRUD operations, dynamic templates</p><div class="progress"><span></span></div></article>
+          <article class="skill-card reveal" data-level="78"><div class="skill-icon">DB</div><h3>Databases</h3><p>SQLite and SQL-based database handling</p><div class="progress"><span></span></div></article>
+          <article class="skill-card reveal" data-level="72"><div class="skill-icon">SN</div><h3>Platforms</h3><p>ServiceNow, GitHub, web application platforms</p><div class="progress"><span></span></div></article>
+          <article class="skill-card reveal" data-level="82"><div class="skill-icon">IoT</div><h3>ECE & IoT</h3><p>Digital circuit design, ESP32, sensors, Internet of Things</p><div class="progress"><span></span></div></article>
+          <article class="skill-card reveal" data-level="86"><div class="skill-icon">GT</div><h3>Tools & Version Control</h3><p>Git, GitHub, VS Code, collaborative development workflows</p><div class="progress"><span></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work across full-stack web and smart healthcare IoT.</h2>
+        </div>
+        <div class="project-controls reveal">
+          <div class="filter-tabs" role="tablist" aria-label="Project filters">
+            <button class="active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="web">Web</button>
+            <button type="button" data-filter="iot">IoT</button>
+            <button type="button" data-filter="healthcare">Healthcare</button>
+          </div>
+          <label class="search-box">
+            <span>Search</span>
+            <input id="projectSearch" type="search" placeholder="Search projects...">
+          </label>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card reveal" data-category="web" data-title="MyCart Django E-Commerce Web Application">
+            <div class="project-visual visual-saas"></div>
+            <div class="project-body">
+              <h3>MyCart - Django E-Commerce Web Application</h3>
+              <p>Built a full-stack e-commerce application with product listings, shopping cart management, order tracking, authentication, CRUD operations, dynamic templates, backend database handling, and responsive UI components.</p>
+              <div class="tags"><span>Django</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>SQLite</span></div>
+              <div class="project-links"><a href="https://github.com/SyedWasif-18" target="_blank" rel="noreferrer">GitHub</a><a href="#contact">Request Demo</a></div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="iot healthcare web" data-title="ShwasIn Portable Cough Detection and Monitoring Device">
+            <div class="project-visual visual-cloud"></div>
+            <div class="project-body">
+              <h3>ShwasIn - Portable Cough Detection and Monitoring Device</h3>
+              <p>Built a compact ESP32-based cough detection and monitoring device using sound and gas sensors, with web applications for real-time monitoring, alerts, analytics, and cough pattern tracking.</p>
+              <div class="tags"><span>ESP32</span><span>IoT</span><span>Sensors</span><span>Web App</span><span>Healthcare</span></div>
+              <div class="project-links"><a href="https://github.com/SyedWasif-18" target="_blank" rel="noreferrer">GitHub</a><a href="#contact">Request Demo</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>A journey of learning, building, competing, and serving.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span>2026</span><h3>Python Full Stack Virtual Internship</h3><p>Strengthened full-stack development fundamentals with Python, web technologies, and application-building workflows.</p></article>
+          <article class="timeline-item reveal"><span>2025</span><h3>Hackathon & Project Expo Builder</h3><p>Developed and presented smart healthcare and IoT solutions in competitive technical events.</p></article>
+          <article class="timeline-item reveal"><span>2024</span><h3>NSS Volunteer</h3><p>Served at Pedha Matla Gondi, Singanamala, supporting community service and rural development activities.</p></article>
+          <article class="timeline-item reveal"><span>2023</span><h3>B.Tech ECE Learning Journey</h3><p>Started focused engineering growth across electronics, programming, web technologies, Git, and IoT systems.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Certifications</p>
+          <h2>Credentials that reinforce employability and full-stack capability.</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card reveal"><div class="cert-image">PY</div><h3>Python Full Stack Virtual Internship</h3><p>Full-stack development certification</p><a href="#contact">Request Credential</a></article>
+          <article class="cert-card reveal"><div class="cert-image">WF</div><h3>Employability Skills Program Advance</h3><p>Wadhwani Foundation</p><a href="#contact">Request Credential</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="section-shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Achievements</p>
+          <h2>Recognition from hackathons, expos, and community contribution.</h2>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-card reveal"><span>01</span><h3>National-Level Hackathon Winner</h3><p>Achieved 1st place in the National-Level Hackathon during the technical symposium organized by TECH College, Tadipatri.</p></article>
+          <article class="achievement-card reveal"><span>02</span><h3>NEXTGEN 2k25 IoT Hackathon</h3><p>Achieved 2nd place in the NEXTGEN 2k25 IoT Hackathon organized by SRIT, Anantapur.</p></article>
+          <article class="achievement-card reveal"><span>03</span><h3>Smart Healthcare Model Expo</h3><p>Secured 1st prize for developing a smart healthcare device for children at Model Expo organized by SRIT.</p></article>
+          <article class="achievement-card reveal"><span>04</span><h3>JNTUA Project Expo Recognition</h3><p>Received a Second Best Performance certificate for a portable cough detecting device at Project Expo in JNTUA, Pulivendula.</p></article>
+          <article class="achievement-card reveal"><span>05</span><h3>NSS Volunteer</h3><p>Supported community service and rural development activities at Pedha Matla Gondi, Singanamala.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-shell split-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Academic foundation in electronics, communication, and applied technology.</h2>
+        </div>
+        <div class="education-card reveal">
+          <span class="education-year">2023 - Present</span>
+          <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+          <p>Srinivasa Ramanujan Institute of Technology, Anantapur</p>
+          <p>CGPA: 8.49 / 10</p>
+          <div class="coursework">
+            <span>Digital Circuit Design</span><span>Internet of Things</span><span>Python</span><span>SQL</span><span>Web Technologies</span>
+          </div>
+          <hr class="education-divider">
+          <span class="education-year">2021 - 2023</span>
+          <h3>MPC - Board of Intermediate Education</h3>
+          <p>Narayana Junior College, Anantapur</p>
+          <p>Percentage: 96%</p>
+          <hr class="education-divider">
+          <span class="education-year">2020 - 2021</span>
+          <h3>Secondary School Certificate</h3>
+          <p>Viswa Bharathi English Medium School, Anantapur</p>
+          <p>Percentage: 99%</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="section-shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Built for mentors, teams, and evaluators who value practical execution.</h2>
+        </div>
+        <div class="testimonial-frame reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <article class="testimonial-card"><p>"A focused builder who turns technical ideas into working demonstrations with clarity."</p><strong>Project Evaluator</strong><span>Technical Showcase</span></article>
+            <article class="testimonial-card"><p>"Strong practical interest in IoT, healthcare devices, and web-connected monitoring systems."</p><strong>Academic Mentor</strong><span>Project Guidance</span></article>
+            <article class="testimonial-card"><p>"Shows initiative through competitions, volunteer work, and consistent technical learning."</p><strong>Team Collaborator</strong><span>Student Projects</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Have an internship, project, or collaboration in mind?</h2>
+          <p>Send a message and I will get back with a clear, thoughtful response.</p>
+          <div class="contact-list">
+            <a href="mailto:syedwasif8198@gmail.com">syedwasif8198@gmail.com</a>
+            <a href="tel:+919441518198">+91 94415 18198</a>
+            <span>4-335, 4th Road, Anantapur, Andhra Pradesh 515001</span>
+            <a href="https://www.linkedin.com/in/syedwasif2004/" target="_blank" rel="noreferrer">linkedin.com/in/syedwasif2004</a>
+            <a href="https://github.com/SyedWasif-18" target="_blank" rel="noreferrer">github.com/SyedWasif-18</a>
+          </div>
+          <div class="map-card" aria-label="Location map preview">
+            <span></span>
+            <strong>Anantapur, Andhra Pradesh</strong>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+          <label>Subject<input type="text" name="subject" placeholder="Project or opportunity" required></label>
+          <label>Message<textarea name="message" placeholder="Tell me what you are building..." rows="5" required></textarea></label>
+          <p class="form-status" id="formStatus" role="status"></p>
+          <button class="button primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <a class="brand" href="#hero"><span class="brand-mark">SW</span><span>Syed Wasif</span></a>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>© 2026 Syed Mohammad Wasif. Designed and built with care.</p>
+      <a class="back-top" href="#hero" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

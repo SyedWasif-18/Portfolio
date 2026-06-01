@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Syed Mohammad Wasif Portfolio Preview</title>
+  <desc id="desc">Dark premium portfolio preview for Syed Mohammad Wasif with blue, cyan, and purple product design accents.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f7cff"/>
+      <stop offset=".55" stop-color="#9b5cff"/>
+      <stop offset="1" stop-color="#28e7ff"/>
+    </linearGradient>
+    <radialGradient id="r" cx=".72" cy=".22" r=".7">
+      <stop offset="0" stop-color="#28e7ff" stop-opacity=".42"/>
+      <stop offset=".4" stop-color="#9b5cff" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect width="1200" height="630" fill="url(#r)"/>
+  <circle cx="1020" cy="70" r="270" fill="#2f7cff" opacity=".16"/>
+  <circle cx="130" cy="570" r="260" fill="#40d99a" opacity=".1"/>
+  <rect x="78" y="72" width="1044" height="486" rx="18" fill="#ffffff" opacity=".075" stroke="#ffffff" stroke-opacity=".16"/>
+  <rect x="126" y="130" width="76" height="76" rx="12" fill="url(#g)"/>
+  <text x="164" y="177" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#ffffff">SW</text>
+  <text x="126" y="285" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="900" fill="#ffffff">Syed Mohammad Wasif</text>
+  <text x="126" y="350" font-family="Inter, Arial, sans-serif" font-size="35" font-weight="700" fill="#28e7ff">Developer & IoT Portfolio</text>
+  <text x="126" y="410" font-family="Inter, Arial, sans-serif" font-size="25" fill="#a8adb9">Django, Python, ECE, and smart healthcare systems.</text>
+  <rect x="780" y="142" width="250" height="320" rx="18" fill="url(#g)" opacity=".9"/>
+  <circle cx="905" cy="266" r="82" fill="#ffffff" opacity=".88"/>
+  <rect x="828" y="370" width="154" height="22" rx="11" fill="#ffffff" opacity=".78"/>
+</svg>
